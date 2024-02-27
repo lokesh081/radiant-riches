@@ -1,0 +1,140 @@
+
+
+.header{
+    background: #212731;
+    color: white;
+    width: 100%;
+    margin-bottom: 38px;
+
+    .search{
+        margin: 14px 53px;
+    }
+
+    .search-wrap{
+        .input-group-text{
+            left: 9px;
+            top: 5px;
+        }
+    }
+
+    .navmenu ul{
+
+        li a{
+            text-decoration: none;
+            color: white;;
+            text-wrap: nowrap;
+            margin: auto 26px;
+        }
+    }
+
+    .mobile-navmenu{
+        display: none;
+    }
+
+    .search input{
+        border: none;
+        height: 37px;
+        width: 213px;
+        padding-left: 45px;
+        border-radius: 8px;
+
+        &:focus-visible{
+            border: none;
+           outline: none;
+        }
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    /* Styles for small devices */
+        .header{
+
+            .search{
+                
+            }
+
+
+            .wrapper{
+                flex-direction: column;
+            }
+
+            .navmenu ul {
+                gap: 1em;
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+
+  }
+
+  @media only screen and (max-width:850px) {
+        .navmenu{
+            display: none;
+        }
+
+        .mobile-navmenu{
+            display: flex !important;
+            background-color: #212731;
+            position: fixed;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            width: 100vw;
+            top: 0;
+            left: 0;
+            z-index: 2;
+            transition: .5s ease;
+
+            button{
+                color: aliceblue;
+                position: absolute;
+                background: transparent;
+                border: none;
+                top: 30px;
+                right: 30px;
+                font-size: 36px;
+            }
+
+            ul{
+                display: flex;
+                flex-direction: column;
+                gap: 40px;
+
+                li{
+
+                    a{
+                        text-decoration: none;
+                        color: aliceblue;
+                    }
+                }
+            }
+        }
+
+        .header{
+
+            .wrapper{
+                width: 100%;
+                margin: 0px 20px;
+            }
+            .search{
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                width: 100%;
+
+                input{
+                    width: auto;
+                }
+            }
+
+            .hamburg{
+
+                button{
+                    background: transparent;
+                    font-size: 35px;
+                    border: none;
+                    color: azure;
+                }
+            }
+        }
+  }

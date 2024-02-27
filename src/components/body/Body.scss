@@ -1,0 +1,15 @@
+.Body{
+    background: #FBFCFD;
+}
+
+@media only screen and (min-width: 767px) and (max-width: 1024px) {
+    /* Styles for medium devices */
+    
+}
+
+@media only screen and (max-width: 1024px) {
+   .Body{
+    margin: 0px 30px;
+   }
+    
+}

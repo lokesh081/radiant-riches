@@ -1,0 +1,85 @@
+.cards{
+
+    .rel-deal-card{
+        width: 33.33%;
+        background:#FFFFFF;
+        border-radius: 12px;
+        flex-wrap: wrap;
+
+        .description{
+            color: #626E79;
+
+            .name{
+                font-size: 16px;
+                color: #626E79;
+            }
+        }
+
+        .price{
+            width: 100%;
+            
+            span{
+                padding: 0.3em;
+                font-size: 14px;
+            }
+            .actual-price{
+                font-size: 20px;
+                color:#5C6874;
+            }
+            .offer-price{
+                color: #9FA9B3;
+            }
+
+            .offer{
+                color: #EF4C5D;
+            }
+        }
+
+        button{
+            width: 100%;
+            background: #1B88F4;
+            border: none;
+            border-radius: 12px;
+            color: white;
+            padding: .7em;
+        }
+
+        .image{
+            img{
+                width: 141px;
+                height: 103px;
+            }
+        }
+
+        .description{
+            p:first-child{
+
+                display: flex;
+                gap: 0.3em;
+                span{
+                    background: #F2F4F7;
+                    padding: 0.4em 01em;
+                    font-size: 13px;
+                    border-radius: 12px;
+                    color: #074786;
+                }
+            }
+        }
+    }
+
+}
+
+
+@media only screen and (max-width: 767px) {
+    /* Styles for small devices */
+      .cards{
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        .rel-deal-card{
+            min-width: 80%;
+            flex-direction: column !important;
+        }
+      }
+
+  }

@@ -1,0 +1,110 @@
+.footer{
+    background: #212731;
+    color: white;
+    width: 100%;
+
+    .container{
+        margin-top: 54px;
+        margin-bottom: 200px;
+    }
+
+    .lang{
+        p{
+            font-size: 13px;
+            line-height: 20px;
+            color: #D1D6DA;
+            a{
+                text-decoration: none;
+                color: #B6BDC4;
+
+                &:hover{
+                    color: rgb(158, 158, 158);
+                }
+            }
+        }
+    }
+
+    h4{
+        font-size: 16px;
+        line-height: 24px;
+        margin: 0px;
+        font-weight: 400;
+    }
+
+    ul{
+        list-style: none;
+        padding: 0;
+
+        li{
+            font-size: 13px;
+            line-height: 20px;
+            padding: 1em 0em;
+
+            a{
+                text-decoration: none;
+                color: #B6BDC4;
+
+                &:hover{
+                    color: rgb(158, 158, 158);
+                }
+            }
+        }
+    }
+
+    .categorys{
+        padding-right: 207px;
+    }
+
+    .contact{
+        padding-right: 270px;
+    }
+}
+
+
+@media only screen and (max-width: 767px) {
+    /* Styles for small devices */
+            .footer{
+
+
+                .container{
+
+                    padding: 0px 60px;
+                    justify-content: space-between;
+                    flex-wrap: wrap;
+
+                    div{
+                        padding: 0;
+                    }
+                }
+            }
+
+  }
+
+  @media only screen and (max-width: 1024px) {
+
+    .signup{
+        flex-direction: column;
+
+        .child{
+            width: 100%;
+            justify-content: start;
+        }
+    }
+
+ }
+
+
+ @media only screen and (max-width: 1024px) and (min-width: 767px){
+
+    .footer{
+        .container{
+            padding: 0px 60px;
+            justify-content: space-between;
+
+            div{
+                padding: 0px;
+            }
+        }
+    }
+
+ }
